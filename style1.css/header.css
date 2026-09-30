@@ -1,0 +1,35 @@
+.header{
+  display:flex ;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:20px;
+  padding:0;
+}
+.search-icon{
+margin-left:-28px;
+opacity: 0.4;
+}
+.gem{
+  height: 55px;
+  width: 55px;
+  border-radius: 5px;
+}
+.line-icon{
+  height: 28px;
+ width: 28px;
+ cursor: pointer;
+}
+.search{
+  height: 25px;
+  border:1px solid ;
+  border-radius:20px;
+  
+}
+.search-box{
+  display: flex;
+  align-items:center;
+}
+.header-icon{
+  display: flex;
+  gap:20px;
+}

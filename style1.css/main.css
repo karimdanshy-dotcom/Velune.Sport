@@ -1,0 +1,221 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 15px;
+}
+body {
+    text-direction:rtl;
+}
+
+
+.product {
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product h1 {
+  font-size: 20px;
+  line-height: 1.4;
+  min-height: 40px;
+}
+
+.product button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: lightgreen;
+transition-property:background-color;
+  transition-duration:0.5s;
+transition-timing-function: ease-out;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.main-img , .main-img2 , .main-img3 {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.text-img {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.text-img h5 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.text-img p {
+  margin: 5px 0;
+  font-size: 18px;
+  line-height: 2;
+  direction: rtl;
+}
+/* ================= گوشی عمودی ================= */
+
+@media (max-width: 576px) {
+
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 10px;
+  }
+
+  .search {
+    width: 200px;
+  }
+
+  .product img {
+    height: 210px;
+  }
+
+  .product h1 {
+    font-size: 18px;
+  }
+
+  .product button {
+    font-size: 13px;
+    padding: 7px 8px;
+  }
+
+  .hero {
+    margin-bottom: 35px;
+  }
+
+  .main-img, .main-img2, .main-img3 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .text-img {
+    margin-top: 8px;
+  }
+
+  .text-img h5 {
+    font-size: 20px;
+  }
+
+  .text-img p {
+    font-size: 15px;
+  }
+}
+
+
+/* ================= گوشی افقی ================= */
+
+@media (max-width: 576px) and (orientation: landscape) {
+
+  .main {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 12px;
+  }
+
+  .search {
+    width: 180px;
+  }
+
+  .hero {
+    margin-bottom: 30px;
+  }
+
+  .main-img {
+    height: 180px;
+  }
+
+  .text-img h5 {
+    font-size: 19px;
+  }
+
+  .text-img p {
+    font-size: 14px;
+  }
+
+  .product img {
+    height: 180px;
+  }
+
+  .product h1 {
+    font-size: 16px;
+  }
+
+  .product button {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
+
+
+/* ================= تبلت ================= */
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search {
+    width: 400px;
+  }
+
+  .product img {
+    height: 400px;
+  }
+
+  .main-img {
+    height: 300px;
+  }
+
+  .text-img h5 {
+    font-size: 24px;
+  }
+
+  .text-img p {
+    font-size: 18px;
+  }
+}
+
+ /* ================= لپ تاپ و دسکتاپ ================= */
+
+@media (min-width: 993px) {
+
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .search{
+    width:700px;
+  }
+
+  .product img {
+    height: 400px;
+  }
+
+  .main-img {
+    height: 360px;
+  }
+}
